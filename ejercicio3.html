@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejercicio 3</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navPrincipal">
+        <li class="navPli"><a href="index.html" class="linkNavP">Ejercicio 1</a></li>
+        <li class="navPli"><a href="ejercicio2.html" class="linkNavP">Ejercicio 2</a></li>
+        <li class="navPli"><a href="ejercicio3.html" class="linkNavP">Ejercicio 3</a></li>
+        <li class="navPli"><a href="ejercicio4.html" class="linkNavP">Ejercicio 4</a></li>
+        <li class="navPli"><a href="ejercicio5.html" class="linkNavP">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="pt20">Ejercicio de contador con javaScript</h1>
+  <script language="javascript">
+    {
+    var contador;
+    contador=1;
+    while (contador<5)
+    {
+    let dato=prompt('Introduce número del 1 al 10:','');
+    let num=parseInt(dato);
+    document.write(` <p class="miniCont">El numero introducido es ${num}</br> `);
+    document.write(` El contador es ${contador} </p></br> `);
+    contador = contador +1 ;
+    }
+    document.write( ` </br><h2>
+    Fin del programa
+    contador ya NO es menor que 5.
+    </h2>
+    `);
+    document.write (`</br> Ultimo numero introducido es ${num}`)
+    }
+    </script>
+</body>
+</html>

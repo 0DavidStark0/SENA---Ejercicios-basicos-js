@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+}
+div{
+  text-align: center;
+}
+nav{
+  background: white;
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+.navPrincipal{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 700px) {
+  .navPrincipal{
+    flex-direction: column;
+  }
+  nav{
+    border-radius: 25px;
+  }
+}
+a{
+  border-radius:5px ;
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  padding: 0 5px;
+  color: rgb(0, 0, 0);
+}
+a:hover{
+  background: linear-gradient(90deg, rgba(253,156,29,1) 50%, rgba(252,192,69,1) 100%);
+  cursor: pointer;
+  color: rgb(26, 3, 52);
+}
+li{
+  list-style: none;
+  width: auto;
+}
+.column50{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contenedor{
+  margin-top: 30px;
+}
+.miniCont{
+  margin: 20px;
+  background: linear-gradient(90deg, rgba(253,156,29,1) 50%, rgba(252,192,69,1) 100%);
+  border-radius: 9px;
+}
+.miniCont2{
+  margin: 20px;
+  background: linear-gradient(90deg, rgb(234, 217, 26) 50%, rgb(252, 237, 69) 100%);
+  border-radius: 9px;
+}
+.boton{
+  border: solid;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(253,156,29,1) 50%, rgba(252,192,69,1) 100%);
+  height: 30px;
+  width: 60px;
+}
+.boton:hover{
+  border: ridge;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(252, 234, 38) 50%, rgb(239, 223, 3) 100%);
+}
+.saludar{
+  /* border:2px yellow dotted;
+  width: fit-content;
+  margin: auto; */
+  margin-top: 20px;
+}
+.pt20{
+  padding-top: 20px;
+}

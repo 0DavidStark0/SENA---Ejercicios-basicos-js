@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navPrincipal">
+        <li class="navPli"><a href="index.html" class="linkNavP">Ejercicio 1</a></li>
+        <li class="navPli"><a href="ejercicio2.html" class="linkNavP">Ejercicio 2</a></li>
+        <li class="navPli"><a href="ejercicio3.html" class="linkNavP">Ejercicio 3</a></li>
+        <li class="navPli"><a href="ejercicio4.html" class="linkNavP">Ejercicio 4</a></li>
+        <li class="navPli"><a href="ejercicio5.html" class="linkNavP">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <h1>Ejercicio de funciones con javaScript</h1><br>
+    <input class="boton" type="button" onclick="saludo('Gente')" value="Saludar"><br>
+    <div><h1 class="saludar" id="saludo"></h1></div>
+  <script>
+    function saludo(nombre)
+    {
+    document.getElementById("saludo").innerHTML=(`Hola ${nombre}`);
+    }
+  </script>
+</body>
+</html>

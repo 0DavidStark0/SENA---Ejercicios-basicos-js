@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejercicio 1</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navPrincipal">
+        <li class="navPli"><a href="index.html" class="linkNavP">Ejercicio 1</a></li>
+        <li class="navPli"><a href="ejercicio2.html" class="linkNavP">Ejercicio 2</a></li>
+        <li class="navPli"><a href="ejercicio3.html" class="linkNavP">Ejercicio 3</a></li>
+        <li class="navPli"><a href="ejercicio4.html" class="linkNavP">Ejercicio 4</a></li>
+        <li class="navPli"><a href="ejercicio5.html" class="linkNavP">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <div>
+      <h1>Ejercicio de calcular con javaScript</h1>
+      <div class="column50">
+        <div class="miniCont"><h3 class="calc" id="suma"></h3></div>
+        <div class="miniCont"><h3 id="resta"></h3></div>
+        <div class="miniCont"><h3 id="division"></h3></div>
+        <div class="miniCont"><h3 id="multiplicacion"></h3></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let dato1, dato2, num1, num2;
+    dato1 = window.prompt("Introduce primer número ?", "0");
+    num1 = parseInt(dato1);
+    dato2 = window.prompt("Introduce segundo número ?", "0");
+    num2 = parseInt(dato2);
+    let suma = num1 + num2;
+    let resta = num1 - num2;
+    let division = num1 / num2;
+    let multiplicacion = num1 * num2; 
+    document.getElementById("suma").innerHTML=(`La suma es ${suma}`);
+    document.getElementById("resta").innerHTML=(`La suma es ${resta}`);
+    document.getElementById("division").innerHTML=(`La suma es ${division}`);
+    document.getElementById("multiplicacion").innerHTML=(`La suma es ${multiplicacion}`);
+  </script>
+</body>
+</html>

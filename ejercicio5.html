@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ejercicio 5</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navPrincipal">
+        <li class="navPli"><a href="index.html" class="linkNavP">Ejercicio 1</a></li>
+        <li class="navPli"><a href="ejercicio2.html" class="linkNavP">Ejercicio 2</a></li>
+        <li class="navPli"><a href="ejercicio3.html" class="linkNavP">Ejercicio 3</a></li>
+        <li class="navPli"><a href="ejercicio4.html" class="linkNavP">Ejercicio 4</a></li>
+        <li class="navPli"><a href="ejercicio5.html" class="linkNavP">Ejercicio 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Ejercicio javaScript</h1>
+  <script>
+    let nota1, nota2, nota3;
+    let dato1, dato2, dato3, media;
+    dato1 = window.prompt("Primera nota?", "0");
+    nota1 = parseInt(dato1);
+    dato2 = window.prompt("Segunda nota?", "0");
+    nota2 = parseInt(dato2);
+    dato3 = window.prompt("Tercera nota?", "0");
+    nota3 = parseInt(dato3);
+    media = (nota1 + nota2 + nota3)/3;
+    if (media <5)
+    {
+    resultat = " Suspendido";
+    }
+    else
+    {
+    resultat = " Aprobado";
+    }
+
+    document.write(`<h3 class="miniCont">La primera nota es ${nota1} </h3>`);
+    document.write(`<h3 class="miniCont">La segunda nota es ${nota2} </h3>`);
+    document.write(`<h3 class="miniCont">La tercera nota es ${nota3} </h3>`);
+    document.write(`<h3 class="miniCont2">La nota es ${media} ${resultat} </h3>`);
+    </script>
+</body>
+</html>
